@@ -1,8 +1,4 @@
-Here’s a **rewritten `README.md`** that integrates your project image (`mirror.png`) and keeps the tone polished but still strong for an MVP launch.
 
----
-
-```markdown
 # 🪞 Mirror of Simple Souls — Living-Archive Edition  
 
 ![The Mirror of Simple Souls](mirror.png)
