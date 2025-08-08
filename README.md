@@ -1,25 +1,41 @@
+Here’s a **rewritten `README.md`** that integrates your project image (`mirror.png`) and keeps the tone polished but still strong for an MVP launch.
 
+---
+
+```markdown
 # 🪞 Mirror of Simple Souls — Living-Archive Edition  
-**Marguerite Porete’s 14th-century mystical masterpiece — rebuilt for the 21st century with AI-native pipelines**  
+
+![The Mirror of Simple Souls](mirror.png)
+
+**14th-century mystical masterpiece, rebuilt for the 21st century with AI-native pipelines**  
 *Readable. Critical. French. Digital-native.*
 
 ---
 
-## ✨ What is This?
+## ✨ Overview
 
-This is **not** just a translation.
+This is a **triple-format, AI-orchestrated Living Archive Edition** of *Le Mirouer des simples âmes anienties* (*The Mirror of Simple Souls*) — the poetic, theologically daring dialogue by Marguerite Porete that led to her execution in 1310.  
 
-It’s a **triple-format, AI-orchestrated living archive** of *Le Mirouer des simples âmes anienties* (*The Mirror of Simple Souls*) — the controversial, poetic dialogue by Marguerite Porete that got her burned at the stake in 1310.
+Inside this repository you’ll find:
 
-Inside this repository lives:
-- **Original Old French** text (public domain)
-- **Readable English** — smooth, modern prose for everyone
-- **Critical English** — line-faithful, scholarly precision for the purists
-- All in **JSON-LD** format for libraries, linked data projects, and AI ingestion.
+- **Original Old French** — transcribed from public-domain sources.  
+- **Readable English** — smooth, modern prose for contemporary readers.  
+- **Critical English** — line-faithful, scholarly precision for researchers.  
+- **JSON-LD format** — structured for linked data, digital humanities, and AI workflows.  
 
 ---
 
-## 📦 JSON Structure Overview
+## 📦 JSON Structure
+
+The heart of the project is:
+
+```
+
+Mirror-of-Simple-Souls\_Living-Archive-Edition\_v1\_FR-EN\_Zach-Banks.json
+
+````
+
+The structure follows a nested `Book → Chapter` model:
 
 ```jsonc
 {
@@ -50,83 +66,58 @@ Inside this repository lives:
 ````
 
 * **`text_fr`** — Original Old French text
-* **`text_en_readable`** — Modern, fluid English translation
+* **`text_en_readable`** — Modern, flowing English translation
 * **`text_en_critical`** — Scholarly, literal English translation
-* Nested `hasPart` arrays keep the original book → chapter hierarchy intact.
-* All nodes have stable metadata for citation, linked data, and AI retrieval.
+* All entries contain stable metadata for citation, linked data, and AI integration.
 
 ---
 
 ## 🤖 AI Integration
 
-This edition was created using a **purpose-built AI orchestration pipeline**:
+This edition was created using a **custom AI orchestration pipeline**:
 
-1. **Schema Design** — Defined a JSON-LD schema encoding bibliographic metadata + Agent-to-Agent (A2A) protocol hooks.
-2. **Data Extraction** — Single-file Python script to parse the Old French PDF into structured JSON.
-3. **Dual Translation** — Automated via the OpenAI Python SDK with GPT-4o, using highly-tuned prompts:
+1. **Schema Design** — JSON-LD structure to encode bibliographic data + agent-to-agent (A2A) protocol hooks.
+2. **Data Extraction** — Python script to scrape the Old French PDF into structured JSON.
+3. **Dual Translation** — Automated via OpenAI’s GPT-4o with tuned prompts for:
 
-   * *Readable* → modern, flowing, idiomatic English.
-   * *Critical* → literal, scholarly, doctrinally precise English.
-4. **Comparative QA** — AI-assisted comparison against major published English editions (Babinsky, Kirchberger, Van Woerkom) to verify fidelity and style.
-5. **Format Exports** — Scripts generate Markdown and other formats for human-friendly browsing and publication.
-
----
-
-## 🔥 Why It Matters
-
-* **Dual-track design** — No other edition gives you modern readability *and* scholarly literalness in the same file.
-* **Digital-native from birth** — Ready for AI tools, annotation platforms, and library integration.
-* **Proof-of-concept** — Shows how AI pipelines can empower non-specialists to produce world-class literary work.
+   * *Readable*: modern, accessible English
+   * *Critical*: faithful, scholarly English
+4. **Comparative QA** — Side-by-side comparison with major existing editions (Babinsky, Kirchberger, Van Woerkom).
+5. **Format Exports** — Markdown versions of each track for human-friendly reading.
 
 ---
 
 ## 📂 Repository Contents
 
 ```
-mirror-of-simple-souls-ai-edition/
-├── mirror_original_fr.md       # Old French text (Markdown export)
-├── mirror_en_readable.md       # Readable English (Markdown export)
-├── mirror_en_critical.md       # Critical English (Markdown export)
+.
+├── LICENSE
+├── mirror.png                   # Project image
+├── mirror_original_fr.md        # Old French text
+├── mirror_en_readable.md        # Readable English translation
+├── mirror_en_critical.md        # Critical English translation
 ├── Mirror-of-Simple-Souls_Living-Archive-Edition_v1_FR-EN_Zach-Banks.json
-├── scripts/                    # Extraction + translation scripts
-├── README.md
-└── LICENSE
+└── README.md
 ```
 
 ---
 
 ## 🛠 How to Use
 
-### Quick View
+* Open the `.md` files for a human-readable version of each track.
+* Load the `.json` file in a JSON viewer or process it via Python/JavaScript for structured analysis.
+* Use it as:
 
-You can browse:
-
-* `mirror_original_fr.md` — Old French
-* `mirror_en_readable.md` — Modern English
-* `mirror_en_critical.md` — Scholarly English
-
-### AI Experiments
-
-* Load the JSON into a vector database (Pinecone, Weaviate) for semantic search.
-* Use as a **parallel corpus** for training translation models.
-* Annotate with commentary, footnotes, or multimedia.
+  * A **parallel corpus** for translation study.
+  * A **digital humanities dataset**.
+  * A **testbed** for AI-based text retrieval and annotation.
 
 ---
 
 ## 📜 License
 
-* **Old French** text: Public Domain.
-* **English translations**: Licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
-
-You’re free to share and adapt with attribution.
-
----
-
-## 🌍 Get Involved
-
-* Open an issue to report typos or inconsistencies.
-* Submit pull requests with improvements, annotations, or format conversions (EPUB, HTML, TEI XML).
-* Use it in your research and tag me — I want to see it in action.
+* **Text and translations**: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) — free to share and adapt with attribution.
+* **Code/scripts**: MIT License.
 
 ---
 
@@ -141,16 +132,11 @@ Construction foreman → AI pipeline builder → accidental medieval translator.
 
 ## 📣 Spread the Word
 
-If you think this project is cool:
-
 * ⭐ Star the repo
-* Share it on LinkedIn/Twitter/Reddit
-* Tell a scholar, librarian, or AI tinkerer
+* Share with medievalists, AI researchers, and digital humanists
+* Fork and adapt for your own AI-driven literary projects
 
 ---
 
 > 🪞 *The Mirror still speaks — now in a voice anyone can hear.*
-
-
-
 
