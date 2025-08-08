@@ -1,7 +1,3 @@
-Here’s a **complete, integrated `README.md`** that merges the badass creative tone we built earlier with a clear **JSON structure** and **AI integration** section.
-This will make your repo both exciting to casual readers *and* technically useful to developers and scholars.
-
----
 
 # 🪞 Mirror of Simple Souls — Living-Archive Edition  
 **Marguerite Porete’s 14th-century mystical masterpiece — rebuilt for the 21st century with AI-native pipelines**  
